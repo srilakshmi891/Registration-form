@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech for Girls Registration</title>
+    <link rel="stylesheet" href="registration.css">
+</head>
+
+<body>
+    <div class="reg-split-layout">
+        <div class="reg-half-bg">
+            <!-- Optionally, you can add an <img> here or use CSS background-image -->
+        </div>
+        <div class="reg-half-form">
+            <div class="hey-buddy-banner">👋 Hey Buddy, Join Tech For Girls Community!</div>
+            <div class="reg-container">
+                <div class="reg-topbar"></div>
+                <h2>Tech for Girls Registration</h2>
+                <form id="registrationForm" enctype="multipart/form-data" autocomplete="off">
+                    <div class="form-section">
+                        <input type="text" id="name" name="name" required placeholder=" ">
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="form-section">
+                        <input type="number" id="phone" name="phone" required placeholder=" ">
+                        <label for="phone">Phone Number</label>
+                    </div>
+                    <div class="form-section">
+                        <input type="email" id="email" name="email" required placeholder=" ">
+                        <label for="email">Email ID</label>
+                    </div>
+                    <div class="form-section">
+                        <input type="text" id="college" name="college" required placeholder=" ">
+                        <label for="college">College Name</label>
+                    </div>
+                    <div class="form-section">
+                        <select id="department" name="department" required>
+                            <option value="" disabled selected>Select your BTech Branch</option>
+                            <option value="CSE">Computer Science and Engineering (CSE)</option>
+                            <option value="ECE">Electronics and Communication Engineering (ECE)</option>
+                            <option value="EEE">Electrical and Electronics Engineering (EEE)</option>
+                            <option value="MECH">Mechanical Engineering (MECH)</option>
+                            <option value="CIVIL">Civil Engineering (CIVIL)</option>
+                            <option value="IT">Information Technology (IT)</option>
+                            <option value="CHEM">Chemical Engineering (CHEM)</option>
+                            <option value="BIOTECH">Biotechnology (BIOTECH)</option>
+                            <option value="OTHER">Other</option>
+                        </select>
+                        <label for="department">Department</label>
+                    </div>
+                    <div class="form-section share-section">
+                        <button type="button" id="whatsappShare" class="whatsapp-btn">Share on WhatsApp</button>
+                        <span id="shareCount">Click count: 0/5</span>
+                    </div>
+                    <div class="form-section">
+                        <input type="file" id="screenshot" name="screenshot" accept="image/*,.pdf" required>
+                        <label for="screenshot">Upload Screenshot</label>
+                    </div>
+                    <button type="submit" id="submitBtn" class="submit-btn">Submit Registration</button>
+                </form>
+                <div id="successMessage" class="success-message" style="display:none;"></div>
+            </div>
+        </div>
+    </div>
+    <script src="registration.js"></script>
+</body>
+
+</html>
